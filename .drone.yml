@@ -2,6 +2,7 @@ pipeline:
   master:
     image: plugins/docker
     repo: eownis/grimd
+    storage_driver: overlay2
     secrets: [ docker_username, docker_password ]
     tags:
       - latest
@@ -11,6 +12,7 @@ pipeline:
   v1.0.5:
     image: plugins/docker
     repo: eownis/grimd
+    storage_driver: overlay2
     secrets: [ docker_username, docker_password ]
     tags: v1.0.5
     build_args:
