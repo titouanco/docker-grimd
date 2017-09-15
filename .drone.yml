@@ -1,0 +1,15 @@
+pipeline:
+  master:
+    image: plugins/docker
+    repo: eownis/grimd
+    tags:
+      - latest
+      - master
+    build_args:
+      - GRIMD_VERSION=master
+  v1.0.5:
+    image: plugins/docker
+    repo: eownis/grimd
+    tags: v1.0.5
+    build_args:
+      - GRIMD_VERSION=v1.0.5
