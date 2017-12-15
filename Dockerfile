@@ -1,7 +1,5 @@
-FROM golang:1.9-alpine3.6 as builder
+FROM golang:1.9-alpine3.7 as builder
 LABEL maintainer "Titouan Condé <eownis+docker@titouan.co>"
-LABEL org.label-schema.name="grimd" \
-      org.label-schema.vcs-url="https://git.titouan.co/eownis/docker-grimd"
 
 ARG GRIMD_VERSION=master
 
@@ -10,7 +8,9 @@ RUN mkdir -p $GOPATH/src/github.com/looterz
 RUN git clone --depth 1 --branch $GRIMD_VERSION https://github.com/looterz/grimd.git $GOPATH/src/github.com/looterz/grimd
 RUN cd $GOPATH/src/github.com/looterz/grimd && go get -v && go build -v
 
-FROM alpine:3.6
+FROM alpine:3.7
+LABEL org.label-schema.name="grimd" \
+      org.label-schema.vcs-url="https://git.titouan.co/eownis/docker-grimd"
 
 ENV UID="991" \
     GID="991"
