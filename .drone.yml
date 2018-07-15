@@ -10,5 +10,5 @@ pipeline:
 
 matrix:
   include:
-    - TAG: [latest, master ]
+    - TAG: latest
       GRIMD_VERSION: master
