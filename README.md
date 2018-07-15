@@ -1,12 +1,10 @@
 # 🐳 eownis/grimd
 
-[![build status](https://drone.titouan.co/api/badges/eownis/docker-grimd/status.svg)](https://drone.titouan.co/eownis/docker-grimd)
+[![build status](https://drone.titouan.co/api/badges/t/docker-grimd/status.svg)](https://drone.titouan.co/t/docker-grimd)
 
 [![](https://images.microbadger.com/badges/version/eownis/grimd:master.svg)](https://microbadger.com/images/eownis/grimd:master "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/eownis/grimd:master.svg)](https://microbadger.com/images/eownis/grimd:master "Get your own image badge on microbadger.com")
 
-[![](https://images.microbadger.com/badges/version/eownis/grimd:v1.0.5.svg)](https://microbadger.com/images/eownis/grimd:v1.0.5 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/eownis/grimd:v1.0.5.svg)](https://microbadger.com/images/eownis/grimd:v1.0.5 "Get your own image badge on microbadger.com")
-
-[Grimd](https://github.com/looterz/grimd). Built by [Drone](https://drone.titouan.co/eownis/docker-grimd) and pushed to [Docker Hub](https://hub.docker.com/r/eownis/grimd/).
+[Grimd](https://github.com/looterz/grimd). Built by [Drone](https://drone.titouan.co/t/docker-grimd) and pushed to [Docker Hub](https://hub.docker.com/r/eownis/grimd/).
 
 ## Usage
 
