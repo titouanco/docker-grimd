@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine3.8 as builder
+FROM golang:1.11-alpine3.8 as builder
 
 ARG GRIMD_VERSION=master
 
@@ -14,7 +14,7 @@ RUN go build -v
 FROM alpine:3.8
 LABEL maintainer "Titouan Condé <hi+docker@titouan.co>"
 LABEL org.label-schema.name="grimd" \
-      org.label-schema.vcs-url="https://git.titouan.co/eownis/docker-grimd"
+      org.label-schema.vcs-url="https://code.titouan.co/titouan/docker-grimd"
 
 ENV UID="991" \
     GID="991"

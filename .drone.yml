@@ -4,11 +4,4 @@ pipeline:
     repo: eownis/grimd
     storage_driver: overlay2
     secrets: [ docker_username, docker_password ]
-    tags: ${TAG}
-    build_args:
-      - GRIMD_VERSION=${GRIMD_VERSION}
-
-matrix:
-  include:
-    - TAG: latest
-      GRIMD_VERSION: master
+    tags: latest
