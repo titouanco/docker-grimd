@@ -25,7 +25,7 @@ RUN chmod +x /usr/local/bin/start.sh
 
 COPY grimd.toml /grimd.toml
 
-RUN apk add --no-cache libcap runit tini \
+RUN apk add --no-cache libcap runit tini ca-certificates \
     && setcap cap_net_bind_service=+eip /usr/local/bin/grimd \
     && apk del libcap
 
