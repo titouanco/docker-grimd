@@ -9,9 +9,9 @@ RUN git clone --depth 1 --branch $GRIMD_VERSION https://github.com/looterz/grimd
 WORKDIR $GOPATH/src/github.com/looterz/grimd
 
 RUN go get -v
-RUN go build -v
+RUN go build -v -ldflags="-s -w"
 
-FROM alpine:3.8
+FROM alpine:3.9
 LABEL maintainer "Titouan Condé <hi+docker@titouan.co>"
 LABEL org.label-schema.name="grimd" \
       org.label-schema.vcs-url="https://code.titouan.co/titouan/docker-grimd"
