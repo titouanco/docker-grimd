@@ -1,4 +1,4 @@
-FROM golang:1.11-alpine3.8 as builder
+FROM golang:1.11-alpine3.9 as builder
 
 ARG GRIMD_VERSION=master
 
