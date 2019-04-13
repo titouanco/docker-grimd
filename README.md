@@ -1,10 +1,10 @@
-# 🐳 eownis/grimd
+# 🐳 titouanco/grimd
 
 [![build status](https://cd.code.titouan.co/api/badges/titouan/docker-grimd/status.svg)](https://cd.code.titouan.co/titouan/docker-grimd)
 
-[![](https://images.microbadger.com/badges/version/eownis/grimd:master.svg)](https://microbadger.com/images/eownis/grimd:master "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/eownis/grimd:master.svg)](https://microbadger.com/images/eownis/grimd:master "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/titouanco/grimd:master.svg)](https://microbadger.com/images/titouanco/grimd:master "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/titouanco/grimd:master.svg)](https://microbadger.com/images/titouanco/grimd:master "Get your own image badge on microbadger.com")
 
-[Grimd](https://github.com/looterz/grimd). Built by [Drone](https://cd.code.titouan.co/titouan/docker-grimd) and pushed to [Docker Hub](https://hub.docker.com/r/eownis/grimd/).
+[Grimd](https://github.com/looterz/grimd). Built by [Drone](https://cd.code.titouan.co/titouan/docker-grimd) and pushed to [Docker Hub](https://hub.docker.com/r/titouanco/grimd/).
 
 ## Usage
 
@@ -13,7 +13,7 @@ Extract of my `docker-compose.yml` file, adapt to your needs :
 ```yaml
 ...
   grimd:
-    image: eownis/grimd:latest
+    image: titouanco/grimd:latest
     container_name: grimd
     restart: always
     ports:

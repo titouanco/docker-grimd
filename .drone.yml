@@ -1,7 +1,20 @@
-pipeline:
-  master:
-    image: plugins/docker
-    repo: eownis/grimd
-    storage_driver: overlay2
-    secrets: [ docker_username, docker_password ]
+---
+kind: pipeline
+name: grimd
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    password:
+      from_secret: docker_password
+    repo: titouanco/grimd
     tags: latest
+    username:
+      from_secret: docker_username
+
+...
